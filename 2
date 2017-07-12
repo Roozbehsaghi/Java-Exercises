@@ -1,0 +1,21 @@
+Write a Java program to determine whether an input number is an even number.
+
+	public static void main(String[] args) {
+		
+		determineAnEven();
+		
+	}
+
+	private static void determineAnEven() {
+		int number;
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Please enter any number, I'll check for you if an odd or an even number is? ");
+		
+		number = sc.nextInt();
+		if(number%2==0){
+			System.out.println("You have enterd an EVEN number. ");
+		}
+			else 
+				System.out.println("You have enterd an ODD number ");
+		}
+	}
