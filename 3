@@ -1,0 +1,33 @@
+Write a Java program that determines a student’s grade.
+
+	public static void main(String[] args) {
+		
+		determineGrade();
+	}
+
+	private static void determineGrade() {
+		int QuizScore = 0, MidTermScore = 0, FinalScore = 0, Average = 0;
+		
+		System.out.println("Please enter your Quiz Score: ");
+		Scanner sc = new Scanner(System.in);
+		QuizScore = sc.nextInt();
+		System.out.println("Please enter your Mid Term Score: ");
+		MidTermScore = sc.nextInt();
+		System.out.println("Please enter your Final Score: ");
+		FinalScore = sc.nextInt();
+		Average = 	(QuizScore+MidTermScore+FinalScore)/3;
+		
+		if(Average>=90){
+			System.out.println("The average score is: "+Average+" Your grade = A" );
+		}
+		else if(Average>70 && Average<90){
+			System.out.println("The average score is: "+Average+" Your grade = B" );
+		}
+		else if(Average>=50 && Average<70){
+			System.out.println("The average score is: "+Average+" Your grade = C" );
+		}
+		else
+			System.out.println("The average score is: "+Average+" Your grade = F" );
+		
+	}
+}
