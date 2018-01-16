@@ -8,10 +8,10 @@ public class Math {
 		
 		System.out.println("Computing body mass index (BMI)");
 		
-		System.out.println("Input height in inches: ");
+		System.out.println("Input height in CM: ");
 		hight = scanner.nextInt();
 		
-		System.out.println("Input weight in pound: ");
+		System.out.println("Input weight in KG: ");
 		weight = scanner.nextInt();
 
 		BMI = (weight/(hight*hight))*10000;
